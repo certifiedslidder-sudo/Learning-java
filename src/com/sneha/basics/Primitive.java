@@ -1,4 +1,4 @@
-package com.sneha;
+package com.sneha.basics;
 
 public class Primitive {
     static void main() {

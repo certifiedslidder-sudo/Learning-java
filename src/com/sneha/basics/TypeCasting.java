@@ -1,4 +1,4 @@
-package com.sneha;
+package com.sneha.basics;
 
 import java.util.Scanner;
 // both the data type should be compatible;
