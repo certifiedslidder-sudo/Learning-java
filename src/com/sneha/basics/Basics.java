@@ -18,5 +18,11 @@ public class Basics {
             System.out.println(count);
         }
     }
+          /* VARIABLE NAMING RULES
+          1. variables can start from alphabet or _ or $ , numbers can come in between.
+          2. special characters except _ and $ are not allowed.
+          3. blanks, commas are not allowed.
+          4. keywords not allowed like int , double , class, for ,public, package etc but class1 , Public , paCkAge can be used.
+          */
 
 }
