@@ -25,7 +25,7 @@ public class SecondLargestElement {
                 SMAX = arr[i];
             }
         }
-        System.out.println(  "is the second largest element is: " + SMAX);
+        System.out.println(  "The second largest element of the array is: " + SMAX);
         //System.out.println("Largest element is: "+largest);
     }
 }
