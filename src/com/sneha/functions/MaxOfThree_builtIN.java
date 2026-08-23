@@ -1,7 +1,6 @@
 package com.sneha.functions;
 
 import java.util.Scanner;
-
 public class MaxOfThree_builtIN {
     static void main() {
         Scanner input = new Scanner(System.in);
@@ -12,6 +11,6 @@ public class MaxOfThree_builtIN {
         System.out.println("Enter the third number");
         int c = input.nextInt();
         System.out.print("The Greatest of the given three numbers is: ");
-        System.out.println(Math.max(Math.max(a,b),c));
+        System.out.println(Math.max(Math.max(a,b),c));   // max ek bari m 2 ka hi maximum nikalega.
     }
 }

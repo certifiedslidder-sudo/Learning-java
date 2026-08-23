@@ -1,14 +1,10 @@
 package com.sneha.functions;
-
 import java.util.Scanner;
-
 public class Return_value {
     static void main() {
      int ans =   sum2();
         System.out.println("The answer is: " + ans);
-
     }
-
     // return the value
     static int sum2(){
         Scanner in = new Scanner(System.in);
