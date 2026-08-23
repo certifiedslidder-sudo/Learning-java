@@ -3,7 +3,7 @@ package com.sneha.Arrays;
 import java.util.Scanner;
 
 public class MissingElement {
-    public int  missingElement(int[] arr) {
+    public  static int  missingElement(int[] arr) {
         int n = arr.length +   1 ;
         int sum = n*(n+1)/2;
         int arrsum =  0;
@@ -24,9 +24,10 @@ public class MissingElement {
             arr[i] = input.nextInt();
 
         }
-        MissingElement obj = new MissingElement();
-       int result =  obj.missingElement( arr);
-        System.out.println("the missing element is" + result  );
+        int result = missingElement(arr);
+  //      MissingElement obj = new MissingElement();
+  //     int result =  obj.missingElement( arr);
+        System.out.println("the missing element is " + result  );
 
     input.close();
 
