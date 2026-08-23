@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MissingElement {
     public int  missingElement(int[] arr) {
-        int n = arr.length;
+        int n = arr.length +   1 ;
         int sum = n*(n+1)/2;
         int arrsum =  0;
         for (int ele : arr) {
@@ -18,7 +18,7 @@ public class MissingElement {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the size of the array");
         int size = input.nextInt();
-        int[] arr = new int[size];
+        int[] arr = new int[size-1];
         System.out.println("Enter the elements of the array");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = input.nextInt();
@@ -27,8 +27,8 @@ public class MissingElement {
         MissingElement obj = new MissingElement();
        int result =  obj.missingElement( arr);
         System.out.println("the missing element is" + result  );
-      
 
+    input.close();
 
     }
 }
