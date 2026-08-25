@@ -48,9 +48,21 @@ public class Basics {
        arr.remove(arr.size()-1);
         System.out.println(arr);       // [90, 7,77, 38, 50, 5]
 
-        Collections.reverse(arr);
-        System.out.println(arr);       //[5, 50, 38, 77, 7, 90]
+        //Collections.reverse(arr);
+      //  System.out.println(arr);       //[5, 50, 38, 77, 7, 90]
 
 
+
+
+                      //          REVERSING AN ARRAYLIST
+        int i =0,j = arr.size()-1;
+        while(i<j){
+            int temp = arr.get(i);
+            arr.set(i,arr.get(j));
+            arr.set(j,temp);
+            i++;
+            j--;
+        }
+        System.out.println(arr);     //[5, 50, 38, 77, 7, 90]
       }
 }
