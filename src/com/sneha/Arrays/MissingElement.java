@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class MissingElement {
     public  static int  missingElement(int[] arr) {
-        int n = arr.length +   1 ;
-        int sum = n*(n+1)/2;
-        int arrsum =  0;
+        long n = arr.length +   1 ;   // range of int 2^31 therefore using long to manage constrains
+        long sum = n*(n+1)/2;
+        long arrsum =  0;
         for (int ele : arr) {
            arrsum += ele;
         }
-        return  sum - arrsum;
+        return (int)(sum - arrsum);
 
 
     }
