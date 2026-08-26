@@ -64,5 +64,8 @@ public class Basics {
             j--;
         }
         System.out.println(arr);     //[5, 50, 38, 77, 7, 90]
+
+        ArrayList<Character> arr2 = new ArrayList<>();
+        ArrayList<Double> arr3 = new ArrayList<>();
       }
 }
