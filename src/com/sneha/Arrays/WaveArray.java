@@ -23,7 +23,6 @@ public class WaveArray {
             arr[i] = arr[j];
             arr[j] = temp;
         }
-}
 
      public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
