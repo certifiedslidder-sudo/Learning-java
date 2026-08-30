@@ -1,30 +1,29 @@
 package com.sneha.Arrays;
 import java.util.Scanner;
 public class WaveArray {
-    public static void convertwave(int[] arr){
-       int n = arr.length;
+    public static void convertwave(int[] arr) {
+        int n = arr.length;
         int i = 0;
-        int j = i+1;
-      for(int k =0 ; k<arr.length-1;k++){
-          if(arr[i] >= arr[j])
-              WaveArray.swap(i,j,arr);
-          else if(arr[i]<=arr[j])
-              WaveArray.swap(i,j,arr);
-                i++;
-                j--;
+        // int j = i + 1;
+        for (int k = 0; k < arr.length - 1; k += 2) {
+            int j = k + 1;
+            if (arr[k] < arr[j]) {
+                WaveArray.swap(k, i + 1, arr);
+            }
         }
-        for(int k =0;k<n;k++){
-            System.out.print(arr[k] +" ");
+        for (int k = 0; k < n; k++) {
+            System.out.print(arr[k] + " ");
         }
         System.out.println();
     }
-    public static void swap(int i , int j, int[] arr){
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-        }
 
-     public static void main(String[] args) {
+    public static void swap(int i, int j, int[] arr) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+       }
+
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of the array");
         int n = sc.nextInt();
@@ -37,4 +36,4 @@ public class WaveArray {
         sc.close();
     }
 
-
+}
