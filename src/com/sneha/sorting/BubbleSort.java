@@ -18,7 +18,7 @@ public class BubbleSort
 //        for (int i = 0; i < n - 1; i++) {
 //            for (int j = 0; j < n-1-i; j++) {
 //                if (arr[j] > arr[j + 1]) {
-//                    int temp = arr[j];
+//                    int temp = arr[j];                    // yha pe tc humesh n^2 h bhale hi agr array sorted ho.
 //                    arr[j] = arr[j + 1];
 //                    arr[j + 1] = temp;
 //                }
@@ -32,7 +32,7 @@ public class BubbleSort
             {
                 if (arr[j] > arr[j + 1])
                 {
-                    int temp = arr[j];
+                    int temp = arr[j];     // yha worst and avg tc humesh O(n^2) se kam rhegi aur jb swaps =0 rheta that means wo best tc dega which is O(n)
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                    swaps ++;
@@ -44,3 +44,5 @@ public class BubbleSort
         print(arr);
     }
 }
+                               //  TIME COMPLEXITY FOR BUBBLE SORT
+               // here                T.C = O(n)
