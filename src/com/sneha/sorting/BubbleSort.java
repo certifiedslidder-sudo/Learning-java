@@ -29,17 +29,7 @@ public class BubbleSort
               // BUBBLE SORT OPTIMIZED VERSION
         for (int i = 0; i < n - 1; i++)
         {
-            boolean isSorted = true;
-            for(int j=0;j< n-1;j++)
-            {          // this loop is checking if the array is sorted or not.
-                if(arr[j]>arr[j+1])
-                {
-                    isSorted = false;
-                    break;      // i k andr j loop mai break lga hai to bas j loop hi tootega na ki outer loop i tootega.
-                }
-            }
-            if(isSorted == true) break;    // this is for the outer loop.
-          
+            int swaps = 0;
             for (int j = 0; j < n-1-i; j++)
             {
                 if (arr[j] > arr[j + 1])
@@ -47,10 +37,10 @@ public class BubbleSort
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
-
+                    swaps ++;
                 }
             }
-
+            if(swaps ==0) break;
         }
         print(arr);
     }
