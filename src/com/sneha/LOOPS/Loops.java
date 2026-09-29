@@ -1,7 +1,5 @@
-package com.sneha.conditionals;
+package com.sneha.LOOPS;
 //    print numbers from one to five
-
-import java.util.Scanner;
 
 public class Loops {
     static void main() {

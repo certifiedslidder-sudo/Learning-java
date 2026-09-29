@@ -15,3 +15,7 @@ public class AbsoluteValue {
         }
     }
 }
+// or you can use      if{
+// (n<0) n = -n
+// }
+// sout(n)

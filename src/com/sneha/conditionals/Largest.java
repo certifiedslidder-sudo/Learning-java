@@ -5,10 +5,15 @@ import java.util.Scanner;
 public class Largest {
     static void main() {
         // find the largest of 3 number
+
+
+        // YOU CAN ALSO DO IT BY NESTED IF ELSE
         Scanner sc = new Scanner(System.in);
-        System.out.print("enter the numbers ");
+        System.out.print("enter the 1st numbers ");
         int a = sc.nextInt();
+        System.out.print("enter the 2nd numbers ");
         int b = sc.nextInt();
+        System.out.print("enter the 3rd numbers ");
         int c = sc.nextInt();
         int max = a;
         if(b> max){

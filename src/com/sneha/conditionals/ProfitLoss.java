@@ -11,15 +11,20 @@ public class ProfitLoss {
         int SP = input.nextInt();
         if(CP > SP)
         {
-            int loss = CP -SP;
-            System.out.println("the seller  loss of : "+loss);
+            System.out.println("the seller  incurred loss of : " + (CP-SP));
+            float loss_percantage = (CP-SP/CP)*100;
+            System.out.println("the LOSS percentage is "+loss_percantage+'%');
         }
         else if(SP > CP)
         {
-            int profit = SP -CP;
-            System.out.println(" the seller incurred profit of "+profit);
+            System.out.println(" the seller incurred profit of " + (SP-CP));
+            float profit_percantage = (SP-CP/CP)*100;
+            System.out.println("the profit percentage is "+profit_percantage+'%');
         }
-        else System.out.println(" the seller incurred no profit no loss.");
+        else{
+            System.out.println(" the seller incurred no profit no loss.");
+        }
 
     }
 }
+// An if ladder evaluates multiple conditions sequentially without an else, while an if-else ladder executes the first true condition and optionally runs a final else block if none are true.
