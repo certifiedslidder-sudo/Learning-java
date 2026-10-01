@@ -1,4 +1,4 @@
-package com.sneha.conditionals;
+package com.sneha.LOOPS;
 
 import java.util.Scanner;
 
